@@ -15,9 +15,21 @@ describe('router', function () {
       });
   });
 
-  it('GET /api/demo demo check', function (done) {
+  it('GET /api/demo/data demo check', function (done) {
     request
-      .get('/api/demo')
+      .get('/api/demo/data')
+      .set('Accept', 'application/json')
+      .expect('Content-Type', /json/)
+      .expect(200)
+      .end(function (err, res) {
+        if (err) return done(err)
+        done()
+      });
+  });
+
+  it('GET /api/demo/error error check', function (done) {
+    request
+      .get('/api/demo/error')
       .set('Accept', 'application/json')
       .expect('Content-Type', /json/)
       .expect(200)
