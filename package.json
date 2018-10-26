@@ -7,13 +7,14 @@
   "author": "liuwill <liuwill@live.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint -c .eslintrc .",
-    "test": "mocha --opts test/mocha.opts",
-    "coverage": "nyc mocha --opts test/mocha.opts",
     "start": "nodemon --config nodemon.json app.js",
     "dev": "npm run server:development",
     "server:development": "NODE_ENV=development node app.js",
-    "server:production": "NODE_ENV=production node app.js"
+    "server:production": "NODE_ENV=production node app.js",
+    "lint": "eslint -c .eslintrc .",
+    "test": "mocha --opts test/mocha.opts",
+    "coverage": "nyc mocha --opts test/mocha.opts",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "dependencies": {
     "axios": "^0.18.0",
