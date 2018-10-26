@@ -1,0 +1,7 @@
+node_modules
+wiki
+.nyc_output
+coverage
+now.json
+.env
+yarn.lock

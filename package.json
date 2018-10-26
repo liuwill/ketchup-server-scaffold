@@ -1,0 +1,25 @@
+{
+  "name": "ketchup-server-scaffold",
+  "version": "1.0.0",
+  "description": "scaffold using koa for wechat micro app server",
+  "main": "index.js",
+  "repository": "https://github.com/liuwill/ketchup-server-scaffold.git",
+  "author": "liuwill <liuwill@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --config nodemon.json app.js",
+    "dev": "npm run server:development",
+    "server:development": "NODE_ENV=development node app.js",
+    "server:production": "NODE_ENV=production node app.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ioredis": "^4.2.0",
+    "knex": "^0.15.2",
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mysql": "^2.16.0",
+    "wafer-node-sdk": "^1.4.5"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "ketchup-server-scaffold",
+    "script": "app.js",
+    "cwd": "./",
+    "exec_mode": "cluster",
+    "watch": false,
+    "env": {
+        "NODE_ENV": "production"
+    },
+    "engines": {
+        "node": ">=8.10"
+    }
+}
