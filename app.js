@@ -1,9 +1,9 @@
 const debug = require('debug')('ketchup-server-scaffold')
 
 const serverApp = require('./lib')
-const serverEnv = require('./lib/env').loadEnv()
+const serverEnv = require('./lib/config/env').loadEnv()
 
-const app = serverApp.app
+const app = serverApp.getInstance()
 const config = serverApp.config
 
 let appPort = config.port || 8080
