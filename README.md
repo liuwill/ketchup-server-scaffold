@@ -17,6 +17,7 @@
 示例代码：
 ```javascript
 const Router = require('koa-router')
+const Controller = require('../base')
 
 const router = new Router()
 
@@ -27,12 +28,5 @@ router.get('/data', async (ctx) => {
   }
 })
 
-module.exports = {
-  getPath: () => {
-    return '/demo'
-  },
-  getRouter: () => {
-    return router
-  },
-}
+module.exports = Controller.factory('/demo', router)
 ```
