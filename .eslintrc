@@ -9,6 +9,7 @@
     "config": true,
     "tracer": true
   },
+  "extends": "standard",
   "rules": {
     "no-param-reassign": 0,
     "no-extra-semi": 1,
@@ -16,6 +17,7 @@
     "semi": [ 1, "never" ],
     "no-extra-parens": 1,
     "no-empty": 1,
+    "no-unused-vars": 1,
     "no-dupe-args": 2,
     "no-constant-condition": 2,
     "no-dupe-keys": 2,
@@ -65,7 +67,8 @@
     "comma-style": [1, "last"],
     "block-spacing": [1, "always"],
     "object-curly-spacing": [1, "always"],
-    "array-bracket-spacing": [1, "never"]
+    "array-bracket-spacing": [1, "never"],
+    "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }]
   }
 }
 
