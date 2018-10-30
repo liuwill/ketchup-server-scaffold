@@ -1,5 +1,7 @@
 const debug = require('debug')('ketchup-server-scaffold')
 
+require('./lib/init').loadAppConfig('./app.json')
+
 const serverApp = require('./lib')
 const serverEnv = require('./lib/config/env').loadEnv()
 

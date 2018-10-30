@@ -4,4 +4,6 @@ wiki
 coverage
 now.json
 .env
+./app.json
 yarn.lock
+start.sh
