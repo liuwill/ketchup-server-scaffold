@@ -30,3 +30,43 @@ router.get('/data', async (ctx) => {
 
 module.exports = Controller.factory('/demo', router)
 ```
+
+### 关于日志
+
+本项目使用[pino](https://github.com/pinojs/pino)，作为日志输出工具。
+
+输出的是json格式的日志，如果提供的参数是对象，会自动assign到输出的对象中，字符串则统一join到msg字段。
+
+例如：
+```javascript
+const logger = require('./lib/plugins/logger')
+
+logger.info('hello')
+// {"level":30,"time":1541992046760,"msg":"hello","pid":6387,"hostname":"liuwill-MacBook-Pro.local","v":1}
+
+logger.info({ data: 'hello' })
+// {"level":30,"time":1541992163328,"pid":6443,"hostname":"liuwill-MacBook-Pro.local","data":"hello","v":1}
+```
+
+### 启动服务和测试
+
+启动服务：
+```shell
+# nodemon watch模式启动服务
+$ yarn run start
+
+# 启动dev模式
+$ yarn run dev
+
+# 启动生产模式
+$ make production
+```
+
+单元测试：
+```shell
+# 运行测试用例
+$ yarn run test
+
+# 测试覆盖率统计
+$ yarn run coverage
+```
