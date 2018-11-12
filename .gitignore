@@ -6,4 +6,6 @@ now.json
 .env
 app.json
 yarn.lock
+package-lock.json
 start.sh
+dist
