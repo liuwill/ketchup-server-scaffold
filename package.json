@@ -1,6 +1,6 @@
 {
   "name": "ketchup-server-scaffold",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "scaffold using koa for wechat micro app server",
   "main": "index.js",
   "repository": "https://github.com/liuwill/ketchup-server-scaffold.git",
