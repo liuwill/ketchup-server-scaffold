@@ -13,7 +13,7 @@
   "rules": {
     "no-param-reassign": 0,
     "no-extra-semi": 1,
-    "indent": ["error", 2],
+    "indent": ["error", 2, {"SwitchCase": 1}],
     "semi": [ 1, "never" ],
     "no-extra-parens": 1,
     "no-empty": 1,
