@@ -17,6 +17,7 @@
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "dependencies": {
+    "@koa/cors": "^2.2.2",
     "axios": "^0.18.0",
     "ioredis": "^4.2.0",
     "knex": "^0.15.2",
