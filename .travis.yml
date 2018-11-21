@@ -6,10 +6,6 @@ services:
   - redis-server
 install:
   - yarn install
-env:
-  - MYSQL_USER: travis
-  - MYSQL_DATABASE: ketchup
-  - MYSQL_HOST: localhost
 script:
   - yarn run lint
   - yarn run coverage
