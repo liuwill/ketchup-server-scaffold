@@ -5,10 +5,6 @@
     "node": true,
     "es6": true
   },
-  "globals": {
-    "config": true,
-    "tracer": true
-  },
   "extends": "standard",
   "rules": {
     "no-param-reassign": 0,
