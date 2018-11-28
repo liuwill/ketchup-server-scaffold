@@ -1,4 +1,5 @@
-const debug = require('debug')('ketchup-server-scaffold')
+// const debug = require('debug')('ketchup-server-scaffold')
+const logger = require('./lib/plugins/logger')
 
 require('./lib/init').loadAppConfig('./app.json')
 
@@ -13,4 +14,4 @@ if (serverEnv['PORT']) {
   appPort = serverEnv['PORT']
 }
 
-app.listen(appPort, () => debug(`🍅 listening on port ${appPort}`))
+app.listen(appPort, () => logger.info(`🍅 listening on port ${appPort}`))
