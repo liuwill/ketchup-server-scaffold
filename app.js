@@ -14,4 +14,4 @@ if (serverEnv['PORT']) {
   appPort = serverEnv['PORT']
 }
 
-app.listen(appPort, () => logger.info(`🍅 listening on port ${appPort}`))
+app.listen(appPort, () => logger.info(`🎬 listening on port ${appPort}`))
